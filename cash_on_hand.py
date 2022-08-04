@@ -2,7 +2,7 @@ from pathlib import Path
 def coh_function(forex):
 # def coh_function(forex) to create a function so that it can be imported to main 
     cash_on_hand_csv = []
-    # ann empty list is created
+    # an empty list is created
     home = Path.cwd()
     file_path = home/"csv_reports"/"Cash on hand.csv"
     file_path.touch
