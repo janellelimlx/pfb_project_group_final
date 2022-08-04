@@ -35,7 +35,6 @@ def profitloss_function(forex):
                 # the difference between the previous day profit the the current day profit is calculated
                 # it is rounded off to 2 decimals place
                 if deficit > 0:
-                    print(f"[PROFIT DEFICIT] Day: {day}, Amount : SGD{deficit}\n")   
                     file_write.write(f"[PROFIT DEFICIT] Day: {day}, Amount = SGD{str(deficit)}\n")
                     # if the defict value is negetive, it will print f"[CASH DEFICIT] Day: {day}, Amount = SGD{str(deficit)}     
                 else:        
@@ -44,7 +43,6 @@ def profitloss_function(forex):
             prev_profit = today_profit
         file.close()
         if days_profit == (len(profit_and_loss_csv) - 2):    
-            print(f"[NET PROFIT SURPLUS] net profit on each day is higher than the previous day\n")
             file_write.write(f"[NET PROFIT SURPLUS] net profit on each day is higher than the previous day\n")
         file_write.close
     return None  
