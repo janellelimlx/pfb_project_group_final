@@ -33,8 +33,6 @@ def overhead_function(forex):
     # .index() is used to seperate the values in max_percent
     overheads_expense = highest_expense[index][0]
     overheads_expense_amount = highest_expense[index][1]
-    print(overheads_expense)
-    print(overheads_expense_amount)
     overheads_expense_amount_sgd = float(overheads_expense_amount)*float(forex)
     # this would convert the value from USD to SGD
     file_write_path = home/"summary_report.txt"
