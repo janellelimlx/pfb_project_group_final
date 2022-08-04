@@ -34,7 +34,6 @@ def coh_function(forex):
           # the difference between the previous day cash on hand the the current day cash on hand is calculated
           # it is rounded off to 2 decimals place
           if deficit > 0: 
-            print(f"[CASH DEFICIT] Day: {day}, Amount = SGD{deficit}")
             file_write.write(f"[CASH DEFICIT] Day: {day}, Amount = SGD{str(deficit)}\n")
             # if the defict value is negetive, it will print f"[CASH DEFICIT] Day: {day}, Amount = SGD{str(deficit)}
           else:        
@@ -44,7 +43,6 @@ def coh_function(forex):
         prev_day = today_cash
       file.close()
       if days_cash == (len(cash_on_hand_csv) - 2):    
-          print(f"[CASH SURPLUS] net on each day is higher than the previous day")
           file_write.write(f"[CASH SURPLUS] net on each day is higher than the previous day\n")
           # if cash on hand each day is higher than the previous day, it will print [CASH SURPLUS] net on each day is higher than the previous day
       file_write.close
