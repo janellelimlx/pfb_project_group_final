@@ -10,7 +10,6 @@ def api_function():
         # retrieve data with .json()
         exchange_rate = data['Realtime Currency Exchange Rate']['5. Exchange Rate']
         # using ['Realtime Currency Exchange Rate']['5. Exchange Rate'] will extract the exchange rate from data
-        print(exchange_rate)
     except IOError:
         # the except block allows to handle the error that may occur if the api website is down
         return "file not found"
